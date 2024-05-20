@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Playlist</title>
+    <link rel="stylesheet" th:href="@{/css/displayPlaylist.css}">
+</head>
+<body>
+<header class="container">
+    <a href="index" class="logo">TuneHub</a>
+    <nav class="navigation">
+        <a href="index" style="text-decoration: none; margin-right: 20px;color:white">Home</a>
+        <a href="logout"style="text-decoration: none; margin-right: 5px;color:white">logout</a>
+       
+    </nav>
+</header>
+<section>
+<div class="sidebar">
+            <h3>Admin Home</h3>
+            
+            <a href="/map-songs">Add a Song</a>
+            <a href="/viewSong">View Songs</a>
+         <a href="/createplaylist">Create a Playlist</a>
+        <a href="/viewPlaylist">View Playlist</a>
+        </div>
+    <div class="container1">
+        <div class="playlist-list" th:each="playlist : ${plist}">
+            <div class="playlist-card">
+                <h2 class="playlist-name" th:text="${playlist.name}" style="color:white"></h2>
+                <ul class="song-list">
+                    <li class="song-item" th:each="song :${playlist.songs}" style="color:white">
+                        <p class="song-name" th:text="${song.name}"style="color:white"></p>
+                        <div class="song-player">
+                            <audio controls>
+                                <source th:src="${song.link}" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

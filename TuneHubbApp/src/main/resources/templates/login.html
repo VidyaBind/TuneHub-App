@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+
+<header>
+<!-- <h2> <a href="index" class="logo">TuneHub</a></h2> -->
+    
+    <a href="index" class="logo" style="padding-left: 24px">TuneHub</a>
+    <nav class="navigation">
+        <a href="index" style="text-decoration: none; margin-right: 20px;color: white;">Home</a>
+        <a href="/map-register"style="text-decoration: none; margin-right: 5px;color: white">Register</a>
+       
+    </nav>
+</header>
+<div class="wrapper">
+    <div class="form-login">
+        <h2>Login</h2>
+        <form action="validate" method="post">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password"  name="password" required>
+                    <label>password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="/forgotPassword">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account? <a href="/map-register" class="register-link">Register</a></p>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+    
+    
+

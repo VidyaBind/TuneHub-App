@@ -1,0 +1,132 @@
+/* adminHome.css */
+/* mera page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background: linear-gradient(#ffcad4,#f4acb7);
+    background: linear-gradient(#0d1b2a,#1d2d44);
+    background: linear-gradient(#0d1b2a,#495057);
+     */
+    background: rgb(110,118,118);
+    background: radial-gradient(circle, rgba(110,118,118,1) 17%, rgba(8,15,85,1) 94%);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container {
+    width: 92%;
+    color: #fff;
+    padding: 10px 0;
+}
+header{
+  position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    /*width: 100%;position:fixed;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    /*check this user select  */
+    user-select: none;
+}
+.navigation{
+    position: relative;
+    font-size: 1.1em;
+    
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 97%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+
+.container1 {
+	display:flex;
+    width: 92.5%;
+    margin: 20px auto;
+    
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+   
+     /*
+     background-image: linear-gradient(to right top, #8c939b, #657389, #435375, #273361, #10144a);
+      background: rgb(147,141,151);
+     background: radial-gradient(circle, rgba(147,141,151,1) 0%, rgba(7,34,111,1) 100%);background: linear-gradient(#caf0f8,#cce3de); 
+     background-color:#ffe5ec;*/
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    height:80vh;
+    margin-top: 10px;
+}
+
+.admin {
+    padding: 25px;
+    border-radius: 8px;
+    color:white;
+}
+h3{
+	text-align: center;
+	color:white;
+	padding:5px
+}
+
+/*----Sidebar ffb3c6
+background: linear-gradient(#0d1b2a,#495057);
+*/
+.sidebar {
+        width: 15%;
+        
+        
+        background-color: #013a63;
+        padding: 20px;
+        border-radius: 10px;
+    }
+.sidebar a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color:black;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .sidebar a:hover {
+        background-color: #ced4da;
+        color: black;
+    }
+    .sidebar .active{
+	color:black;
+	background-color: white;
+}

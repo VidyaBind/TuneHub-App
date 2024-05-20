@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" th:href="@{/css/register.css}">
+</head>
+<body>
+<header>
+    <a href="index" class="logo" style="padding-left: 24px">TuneHub</a>
+    <nav class="navigation">
+        <a href="index" style="text-decoration: none; margin-right: 20px;color: white;">Home</a>
+        <a href="/map-login"style="text-decoration: none; margin-right: 5px;color: white">Login</a>
+        
+    </nav>
+</header>
+<div class="wrapper">
+    <div class="form-login">
+        <h2>Login</h2>
+        <form action="register" method="post">
+        <div class="input-box">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label>password</label>
+            </div>
+            <div class="input-box" style="margin-bottom: 3px;">
+                <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
+                 <input type="text" name="address" required>
+                    <label>Address</label>
+            </div>
+           
+             <div style="margin-top: 9px;
+             margin-right: 0px;">
+              <label>Gender:</label>
+            Male<input type="radio" name="gender" value="male" style="margin-right: 38px;
+            margin-left: 4px;">
+            Female<input type="radio" name="gender" value="female" style="margin-right: 38px;
+            margin-left: 4px;">
+            Other<input type="radio" name="gender" value="other" style="margin-right: 0px;
+            margin-left: 4px;">
+            </div>
+            
+          
+           <div style="margin-top: 16px;
+           margin-bottom: -7px;" >
+            <label style="margin-top: 4px;
+            margin-right: 0px;">Role :</label>
+            Admin<input type="radio" name="role" value="admin" style="margin-right: 38px;
+        margin-left: 4px;"><label></label>
+        Customer<input type="radio" name="role" value="customer" style="margin-right: 38px;
+        margin-left: 4px;"><label></label><br><br>
+         </div>
+           
+        <button type="submit" class="btn" style="margin-top: 6px;
+        margin-bottom: 1px;">Register</button>
+            <div class="login-register">
+                <p>Already have an Account?<a href="/map-login">Login</a> </p>
+            </div>
+
+           
+        </form>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

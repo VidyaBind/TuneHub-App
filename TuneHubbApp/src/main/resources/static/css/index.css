@@ -1,0 +1,299 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.containerH {
+    width: 100%;
+    background: linear-gradient(#0d1b2a,#1d2d44);
+    color: #fff;
+    padding: 10px 0;
+    
+}
+header{
+	position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    /*width: 100%;position:fixed;
+      */
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    /*check this user select  */
+    user-select: none;
+}
+.navigation{
+    position: relative;
+    font-size: 1.1em;
+    
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 97%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+
+/*main */
+
+
+/*card 1  */
+
+
+.card {
+	/*padding:100px 80px;*/
+	display:flex;
+	background: linear-gradient(#0d1b2a,#495057);
+	justify-content:center;
+	justify-content:space-evenly;
+	align-items:center;
+	height:80vh;
+    
+}
+.card-item1{
+	
+	flex-direction: row;
+	flex-grow:0.3;
+	
+    height:56vh;
+    color:white;
+}
+
+.card-item2{
+	
+	flex-direction: row;
+    height:73vh;
+    width:25vw;
+  
+   background: url("https://source.unsplash.com/cTj8vbZeX44")
+    no-repeat center / cover;
+    border-radius:12px;
+    
+}
+.btn{
+	padding: 8px 8px;
+	border-radius:8px;
+}
+h1{
+	padding:8px 0;
+	
+}
+p{
+	padding:2px 0;
+}
+
+/*2nd card 
+
+*/
+.cards {
+	
+	display:flex;
+	flex-direction: row;
+	background: linear-gradient(#0d1b2a,#495057);
+	justify-content:center;
+	flex-wrap:wrap;
+	column-gap:1px;
+	align-items:center;
+    height:80vh;
+}
+.cards h1{
+	color:blue;
+	justify-content:center;
+	
+}
+.card-item3 {
+	
+	flex-direction: row;
+	margin:0px 12px;
+	height:33vh;
+    width:25vw;
+    border-radius:12px;
+    background: url("https://source.unsplash.com/8bghKxNU1j0")no-repeat center / cover;
+}
+
+.card-item6 p{
+	padding:9px 0;
+	
+}
+.card-item7 p{
+	padding:9px 0;
+	
+}
+.card-item8 p{
+	padding:9px 0;
+	
+}
+.card-item4 {
+	
+	
+	flex-direction: row;
+	margin:0px 12px;
+	border-radius:12px;
+    height:33vh;
+    width:25vw;
+    background: url("https://source.unsplash.com/EWg1-0UjeWY")no-repeat center / cover;
+  
+}
+.card-item5 {
+	
+	flex-direction: row;
+	margin:0px 12px;
+	border-radius:12px;
+	
+    height:33vh;
+    width:25vw;
+    background: url("https://source.unsplash.com/YuyQoigjXGc")no-repeat center / cover;
+  
+}
+.card-item6 {
+	flex-direction: row;
+	
+	color:white;
+	margin:0px 12px;
+	border-radius:12px;
+    height:34vh;
+    width:25vw;
+    
+    
+}
+.card-item7 {
+	flex-direction: row;
+	
+	color:white;
+	margin:0px 12px;
+	border-radius:12px;
+    height:34vh;
+    width:25vw;
+    
+}
+.card-item8 {
+	
+	flex-direction: row;
+	margin:0px 12px;
+	border-radius:12px;
+    height:34vh;
+    width:25vw;
+    color:white;
+    
+}
+
+/*3rd card */
+
+.card2 {
+	/*padding:100px 80px;*/
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:80vh;
+	
+    background: linear-gradient(#0d1b2a,#495057);
+}
+
+.card-item9{
+	
+	flex-direction: column;
+	margin:0 12px;
+	border-radius:12px;
+    height:60vh;
+    width:42vw;
+    border-radius:12px;
+    background: url("https://source.unsplash.com/5gn2soeAc40")no-repeat center / cover;
+  
+}
+.card-item10{
+	
+	flex-direction: column;
+	margin:0 12px;
+	color:white;
+    height:65vh;
+    width:35vw;
+    
+    
+  
+}
+.card-item10 p{
+	margin-top:50px;
+	
+	
+}
+.card-item10 h2{
+	
+	margin-left:2px;
+	margin-top:60px;
+	margin-bottom:20px;	
+	
+}
+/*4th card*/
+
+ 
+.card3 {
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+	color:white;
+	height:94vh;
+    background: linear-gradient(#0d1b2a,#495057);
+}
+.box-1{
+	
+	margin:30px 90px;
+	background-color:black;
+	height:28vh;
+    width:60vw;
+    border-radius:12px;
+    background: url("https://source.unsplash.com/IcOg3D9yh0o")no-repeat center / cover;
+}
+
+
+
+/*footer */
+.container{
+	height:15vh;
+    width:100vw;
+    background: linear-gradient(#0d1b2a,#1d2d44);
+    
+}
+
+.footer-content {
+	margin-top:-36px;
+	color:#fff;
+	border-top: solid 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:5px;
+}
+.footer-bottom {
+    background-color: #1b263b;
+    color:white ;
+    text-align: center;
+    padding: 2px;
+    margin:8px;
+}
+
+
